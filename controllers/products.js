@@ -1,5 +1,5 @@
 const productList = require('../db/products.json');
-const db = [...productList];
+let db = [...productList];
 
 // { error : -1, descripcion: ruta 'x' método 'y' no autorizada }
 
@@ -55,25 +55,34 @@ const products = {
     const { id } = req.params;
     const updateProduct = db.find((p) => +id === +p.id);
     if (!updateProduct) {
-      res.status(401).json({
+      return res.status(401).json({
         error: -1,
-        descricion: `ruta '${req.originalUrl}' método '${req.method}' no autorizada`,
+        descripcion: `ruta '${req.originalUrl}' método '${req.method}' no autorizada`,
       });
     }
-    console.log(req.body);
-    db.forEach((p) => {
+    db = db.map((p) => {
       if (+p.id === +updateProduct.id) {
-        p = {
+        return {
           ...p,
           ...req.body,
         };
       }
+      return p;
     });
-    return res.status(200);
+    return res.status(200).json({ status: 'OK' });
   },
   delete: (req, res) => {
     console.log('delete products');
-    return res.status(200).json({});
+    const { id } = req.params;
+    console.log(id);
+    if (isNaN(+id) || !id) {
+      return res.status(401).json({
+        error: -1,
+        descripcion: `ruta '${req.originalUrl}' método '${req.method}' no autorizada`,
+      });
+    }
+    db = db.filter((p) => +p.id !== +id);
+    return res.status(200).json({ status: 'OK' });
   },
 };
 
