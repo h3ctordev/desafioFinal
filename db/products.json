@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "producto 1",
+    "description": "Este es un producto 1",
+    "code": "P111",
+    "photoUrl": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Camera-512.png",
+    "price": 100,
+    "stock": 10,
+    "timestamp": 1656122275172
+  },
+  {
+    "id": 2,
+    "name": "producto 1",
+    "description": "Este es un producto 1",
+    "code": "P111",
+    "photoUrl": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Camera-512.png",
+    "price": 100,
+    "stock": 10,
+    "timestamp": 1656122276230
+  },
+  {
+    "id": 3,
+    "name": "producto 3 updated",
+    "description": "Este es un producto 3",
+    "code": "P333",
+    "photoUrl": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Camera-512.png",
+    "price": 300,
+    "stock": 30,
+    "timestamp": 1656122276954
+  },
+  {
+    "id": 4,
+    "name": "producto 1",
+    "description": "Este es un producto 1",
+    "code": "P111",
+    "photoUrl": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Camera-512.png",
+    "price": 100,
+    "stock": 10,
+    "timestamp": 1656122277448
+  },
+  {
+    "id": 5,
+    "name": "producto 1",
+    "description": "Este es un producto 1",
+    "code": "P111",
+    "photoUrl": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Camera-512.png",
+    "price": 100,
+    "stock": 10,
+    "timestamp": 1656123365594
+  }
+]
