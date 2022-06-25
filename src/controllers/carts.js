@@ -8,7 +8,7 @@ const carts = {
   create: async (req, res) => {
     console.log('create cart');
     const body = req.body;
-    if (!body?.products) {
+    if (!body.products) {
       return res.status(401).json({
         error: -1,
         descripcion: `ruta '${req.originalUrl}' método '${req.method}' no autorizada`,
