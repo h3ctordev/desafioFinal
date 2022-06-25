@@ -20,16 +20,6 @@
     "timestamp": 1656122276230
   },
   {
-    "id": 3,
-    "name": "producto 3 updated",
-    "description": "Este es un producto 3",
-    "code": "P333",
-    "photoUrl": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Camera-512.png",
-    "price": 300,
-    "stock": 30,
-    "timestamp": 1656122276954
-  },
-  {
     "id": 4,
     "name": "producto 1",
     "description": "Este es un producto 1",
