@@ -10,7 +10,6 @@ const CartsSchema = new Schema({
   ],
   timestamp: {
     type: Date,
-    required: true,
   },
 });
 

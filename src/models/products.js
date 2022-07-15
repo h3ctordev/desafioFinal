@@ -26,7 +26,6 @@ const ProductsSchema = new Schema({
   },
   timestamp: {
     type: Date,
-    required: true,
   },
 });
 
