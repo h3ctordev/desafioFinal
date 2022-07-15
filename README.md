@@ -1,6 +1,8 @@
 # Desafió final - Héctor Bustos - comisión 30980
 
-### Primera entrega.
+### Primera entrega. (CHECK)
+
+### Segunda entrega - datos persistentes en MongoDB.
 
 #### para correr:
 
